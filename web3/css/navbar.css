@@ -1,0 +1,95 @@
+body{
+    background-color:lightgray;
+}
+#header{
+    background-color: rgba(108, 126, 137, 0.8);
+    margin-top: 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    position: fixed;
+    width: 96%;
+    z-index: 10000;
+}
+.navbar{
+    padding: 10px 24px;
+}
+#icon{
+    width: 60px;
+    height: 60px;
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+ul{
+    margin-top: 1rem;
+}
+li{
+    list-style: none;
+}
+.nav-menu{
+    background-color: rgba(108, 126, 137, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    width: 96%;
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
+
+}
+.nav-link{
+    font-size: 1.5rem;
+}
+.nav-menu.active{
+    left: 0;
+}
+.nav-item{
+    margin: 16px 0;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color: dodgerblue;
+}
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.content{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+}
+.content.active{
+    padding-top: 334px;
+}

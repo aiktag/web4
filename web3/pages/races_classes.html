@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/races_style.css">
+    <title>Races and Classes</title>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="../index.html">
+                    <img src="../images/wow_icon.png" alt="icon" id="icon">
+                </a>
+                <a href="../index.html" class="navbar-brand" id="name">
+                    World Of Warcraft
+                </a>     
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="races_classes.html" class="nav-link">Races and Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="patches.html" class="nav-link">Patches</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>    
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <div class="card shadow-lg p-3 mb-5" style="width: 18rem;">
+                        <div class="card m-3">
+                            <img src="../images/warrior.jpeg" alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5>Warrior</h5>
+                                <p>Tank, Damage</p>
+                                <a href="https://worldofwarcraft.blizzard.com/en-us/game/classes/warrior" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg p-3 mb-5" style="width: 18rem;">
+                        <div class="card m-3">
+                            <img src="../images/paladin.jpeg" alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5>Paladin</h5>
+                                <p>Tank, Healer</p>
+                                <a href="https://worldofwarcraft.blizzard.com/en-us/game/classes/paladin" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg p-3 mb-5" style="width: 18rem;">
+                        <div class="card m-3">
+                            <img src="../images/hunter.jpeg" alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5>Hunter</h5>
+                                <p>Damage</p>
+                                <a href="https://worldofwarcraft.blizzard.com/en-us/game/classes/hunter" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg p-3 mb-5" style="width: 18rem;">
+                        <div class="card m-3">
+                            <img src="../images/mage.jpeg" alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5>Mage</h5>
+                                <p>Damage</p>
+                                <a href="https://worldofwarcraft.blizzard.com/en-us/game/classes/mage" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-lg p-3 mb-5" style="width: 18rem;">
+                        <div class="card m-3">
+                            <img src="../images/druid.webp" alt="..." class="card-img-top">
+                            <div class="card-body">
+                                <h5>Druid</h5>
+                                <p>Healer, Damage</p>
+                                <a href="https://worldofwarcraft.blizzard.com/en-us/game/classes/druid" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>Try to list more races in 30 seconds</h1>
+    <div id="timer-container">
+        <div id="timer">30</div>
+    </div>
+    <button id="startButton" onclick="startTimer()">Start</button>
+    <button id="stopButton" onclick="stopTimer()">Stop</button>
+    <button id="resetButton" onclick="resetTimer()">Reset</button>
+            <h1>List races</h1>
+    <div>
+        <input type="text" id="task" placeholder="Add race">
+        <button onclick="addTask()">Add race</button>
+    </div>
+    <ul id="taskList"></ul>
+            <hr>
+            <div class="list-group container">
+                <h1>Races</h1>
+                    <ul class="list-group">
+                    <li class="list-group-item">Allience- Human, Dwarf, Night elf, Gnome, Draenei</li>
+                    <li class="list-group-item">Horde- Orc, Undead, Tauren, Troll, Blood Elf</li>
+                    <li class="list-group-item">Allied races- Void elf, Lightfordged Drenai, Kul Tiran</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="tab-container">
+    <button class="tab-button" onclick="showTab(event, 'tab1')">Learn about Alliance</button>
+    <button class="tab-button" onclick="showTab(event, 'tab2')">Learn about Horde</button>
+</div>
+<div id="tab1" class="tab-content">Humans, night elves, dwarves, gnomes, draenei, and the savage worgen make up the illustrious Alliance. Proud and noble, courageous and wise, these races work together to preserve order in Azeroth. The Alliance is driven by honor and tradition. Its rulers are champions of justice, hope, knowledge, and faith.
+In a time when chaos and uncertainty reign, the Alliance remains steadfast in its determination to bring light to the darkest corners of the world.
+The Alliance (also called the Grand Alliance) is one of two major political factions of the mortal races in Azeroth, its counterpart being the Horde which the Alliance has traditionally been at war with. Driven by tradition, the Alliance consists of powerful cultures and groups bound not by desperation or necessity, but by their deep commitments to abstract concepts like nobility, honor, faith, justice, and sacrifice. Striving to represent these high ideals, its many different peoples all contribute their technical, arcane, and spiritual wisdom[6] toward the shared goal of preserving order on Azeroth[7] and creating a peaceful and just world.</div>
+<div id="tab2" class="tab-content">The Horde is made up of orcs, forsaken, tauren, trolls, blood elves, and most recently, goblins. Misunderstood and cast aside, these diverse and powerful races strive to overcome their differences and unite as one in order to win freedom for their people and prosper in a land that has come to hate them.
+In the Horde, action and strength are valued above diplomacy, and its leaders earn respect by the blade, wasting no time with politics. The brutality of the Horde's champions is focused, giving a voice to those who fight for survival.
+The Horde (also called the New Horde or Thrall's Horde) is one of the two major political factions of the mortal races in Azeroth, its counterpart being the Alliance which the Horde has traditionally been at war with. Driven by unity, the Horde consists of a coalition of disparate races and cultures loosely joined in an alliance of convenience against a hostile world that would see them destroyed. A faction led by off-worlders and composed of outsiders, the Horde has survived the obstacles of Azeroth by bonding together, fighting as family, comrades, or even uneasy allies.[5] Focused, ferocious, and sometimes monstrous, the Horde values strength and honor and is relentlessly opposed to any who threaten the ideals of freedom and hope, but struggles to keep aggression in check.</div>
+            <a href="patches.html" class="btn btn-info btn-lg " role="button">patches</a>
+            <br><br>
+        </div>
+    </div>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>

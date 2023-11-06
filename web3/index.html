@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div id="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="images/wow_icon.png" alt="icon" id="icon">
+                </a>
+                <a href="index.html" class="navbar-brand" id="name">
+                    World Of Warcraft
+                </a>     
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/races_classes.html" class="nav-link">Races and Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/patches.html" class="nav-link">Patches</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>    
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h3>Blizzard Entertainment</h3>
+            <br>
+            <p>A universe originally invented for computer games from the Warcraft series. Later it was also developed into board games, a trading card game, books, comics, films, various marketing products such as action figures, T-shirts, mouse pads, etc. World of Warcraft magazine is published on a quarterly basis: The Magazine. Like many other popular fictional universes, the Warcraft universe is enriched by unofficial creativity: comics, video, including the full-length film “Tales of the Past” in three parts, made on the World of Warcraft engine by a student Martin Fall.</p>
+        </div>
+        <hr>
+        <div class="content2">
+            <h1>Timeline</h1>
+            <table class="table table-bordered border-black">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>The Burning Crusade</td>
+                        <td>16.01.2007</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Wraith of the Lich King</td>
+                        <td>13.11.2008</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Cataclysm</td>
+                        <td>07.12.2010</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Mists of Pandaria</td>
+                        <td>25.09.2012</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Battle for Azeroth</td>
+                        <td>03.11.2017</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Dragonflight<span class="badge badge-dark">New</span></td>
+                        <td>29.11.2022</td>
+                    </tr>
+                </tbody>
+            </table>
+             <audio id="background-audio" controls autoplay="false">
+    <source src="images/wow.mp3" type="audio/mpeg">
+    <button onclick="playAudio()">Play</button>
+    <button onclick="pauseAudio()">Pause</button>
+    <button onclick="stopAudio()">Stop</button>
+</audio>
+    <br><br>
+        </div>
+    </div>
+
+    <script src="js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
